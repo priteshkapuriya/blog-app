@@ -9,7 +9,6 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const login = (data) => {
-    console.log("data", data);
     setUser(undefined);
     fetch("https://js1.10up.com/wp-json/jwt-auth/v1/token", {
       method: "POST",
@@ -20,7 +19,6 @@ export const AuthProvider = ({ children }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Success:", data);
         setUser(data);
         isTokenValid(data.token);
       })
