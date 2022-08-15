@@ -12,5 +12,5 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![About](About.jpg)
-![Posts](Post.jpg)
+![Posts](Posts.jpg)
 ![login-with-wrong-username](login-with-wrong-username.jpg)
