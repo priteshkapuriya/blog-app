@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 
 export const AppBar = ({ pages }) => {
-  console.log("Pritesh", pages);
   const [isShow, setShow] = useState(false);
   const navigate = useNavigate();
   const { user, logout } = useAuth();
