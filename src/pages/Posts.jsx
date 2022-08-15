@@ -9,10 +9,9 @@ export const Posts = () => {
     fetch("https://js1.10up.com/wp-json/wp/v2/posts")
       .then((respose) => respose.json())
       .then((data) => {
-        console.log(data);
         setPosts(data);
       })
-      .catch((error) => console.log("Error", error));
+      .catch((error) => console.error("Error", error));
   }, []);
   return (
     <>

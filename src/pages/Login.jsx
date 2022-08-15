@@ -13,7 +13,6 @@ export const LoginPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(username, password);
     login({
       username: username,
       password: password

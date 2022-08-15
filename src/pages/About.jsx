@@ -6,10 +6,9 @@ export const About = () => {
     fetch("https://js1.10up.com/wp-json/wp/v2/pages")
       .then((respose) => respose.json())
       .then((data) => {
-        console.log(data);
         setAboutData(data);
       })
-      .catch((error) => console.log("Error", error));
+      .catch((error) => console.error("Error", error));
   }, []);
   return (
     <>
